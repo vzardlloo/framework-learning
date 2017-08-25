@@ -1,6 +1,8 @@
 package org.vzard.domain;
 
 /**
+ *
+ * User类
  * Created by V-zar on 2017/8/25.
  */
 public class User {
