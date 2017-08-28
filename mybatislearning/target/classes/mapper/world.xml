@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">   
+  
+<mapper namespace="test">
+
+    <select id="findCityById" parameterType="int" resultType="org.vzard.po.City">
+        SELECT * FROM city WHERE ID = #{VALUE}
+    </select>
+
+    <select id="findCityByName" parameterType="java.lang.String" resultType="org.vzard.po.City">
+        SELECT ID,city.Name,city.District,city.Population FROM city WHERE Population > ${value}
+    </select>
+
+
+
+
+
+
+
+</mapper>
